@@ -48,7 +48,6 @@ body{
 section{
     min-height: 100vh;
     padding: 1rem;
-
 }
 
 header{
@@ -71,7 +70,7 @@ header .me img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem ;
-    border: .7rem solid var(--yellow);
+    border: .5rem solid var(--yellow);
 }
 
 header .me .name{
@@ -82,6 +81,10 @@ header .me .name{
 header .me .job{
     font-size: 2rem;
     color: #eee;
+}
+
+header .me .job span {
+    color: var(--yellow);
 }
 
 header .navbar{
@@ -199,7 +202,7 @@ header .navbar ul li a:hover{
     color: var(--yellow);
 }
 
-.school .container{
+.academic .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -208,7 +211,7 @@ header .navbar ul li a:hover{
     padding-left: 3rem ;
 }
 
-.school .container .box{
+.academic .container .box{
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
@@ -216,7 +219,7 @@ header .navbar ul li a:hover{
     position: relative;
 }
 
-.school .container .box span{
+.academic .container .box span{
     font-size: 1.5rem ; 
     background: #222;
     color: #fff;
@@ -224,20 +227,20 @@ header .navbar ul li a:hover{
     padding: .5rem 2.5rem;
 }
 
-.school .container .box a h3{
+.academic .container .box a h3{
     font-size: 1.8rem;
     color: #fff;
     padding-top: 1.5rem;
 }
 
-.school .container .box p{
+.academic .container .box p{
     font-size: 1.4rem;
     color: #eee;
     padding: 1rem 0;
      
 }
 
-.school .container .box i{
+.academic .container .box i{
     position: absolute;
     top: -1.5rem; left: -2.5rem;
     height: 5rem;
@@ -250,6 +253,153 @@ header .navbar ul li a:hover{
     background: var(--yellow);
 }
 
+
+.skill .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem ;
+}
+
+.skill .container .box{
+    width: 25rem;
+    margin: 17px;
+    padding-left: 30px;
+    border-left: 0.2rem solid #fff;
+    position: relative;
+    background-color: #8f7824;
+    border-radius: 15px;
+}
+
+.skill .container .box span {
+    font-size: 1.2rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1rem 10px;
+} 
+
+.skill .container .box a h3{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.skill .container .box a img{
+    height: 18rem;
+    width: 18rem;
+    object-fit: contain;
+    margin: 15px 0;
+}
+
+
+.skill .container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+     
+}
+
+.skill .container .box i{
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
+
+.project .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem ;
+}
+
+.project .container .box{
+    width: 40rem;
+    min-height: 40rem;
+    height: auto;
+    margin: 17px;
+    padding-left: 30px;
+    border-left: 0.2rem solid #fff;
+    position: relative;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+.project .container .box span {
+    font-size: 1.5rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1rem 25px;
+} 
+
+.project .container .box h3{
+    font-size: 1.8rem;
+    color: #fff;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.project .container .box img{
+    height: 20rem;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px auto;
+    background-color: black;
+}
+
+.project .container .box .repo-project{
+    display: inline-block;
+    margin: 15px 0;
+    color: #222;
+    font-size: medium;
+}
+
+.project .container .box .desc-project{
+    font-size: 1.6rem;
+    color: #222;
+    padding: 1rem 0;
+}
+
+.project .container .box .tech-project {
+    margin: 20px 0 15px 0;
+}
+
+.project .container .box .tech-project span {
+    width: 2rem;
+    font-size: 1.5rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1rem 5px;
+    margin: 0 2px;
+} 
+
+.project .container .box i{
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
 /* Media */
 @media (max-width:1200px){
     html{
@@ -273,6 +423,13 @@ header .navbar ul li a:hover{
 
     body{
         padding: 0;
+    }
+
+    .skill .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
 }
@@ -299,7 +456,7 @@ header .navbar ul li a:hover{
         width: 100%;
     }
 
-    .school .container .box{
+    .academic .container .box{
         width: 100%;
     }
 
